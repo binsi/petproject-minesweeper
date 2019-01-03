@@ -1,7 +1,7 @@
 # Pet Project: Minesweeper
 This is a simple console output-only game written in vanilla JavaScript.
 The idea behind the pet project is to get back into coding and apply a list of topics that have been taught during the lecture of the module **Advanced Softwareengineering**.
-The code is an adaption of a project from an intensive program ["Build Front-End Web Applications from Scratch"](http://pro.codecademy.com/intensive/build-frontend-webapps-from-scratch/ "Codecademy Program Reference") found on Codecademy, in which I participated to learn JavaScript earlier in 2018.
+The code is an adaption of a project from an intensive program [Build Front-End Web Applications from Scratch](http://pro.codecademy.com/intensive/build-frontend-webapps-from-scratch/ "Codecademy Program Reference") found on Codecademy, in which I participated to learn JavaScript earlier in 2018.
 
 ## The Game
 The game is a console only game and the project code can be executed using *node*.
@@ -31,9 +31,12 @@ to exit the game when done playing
 
 ## UML Diagrams
 ## Metrics
+[![Sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=binsi_petproject-minesweeper&metric=alert_status)](https://sonarcloud.io/dashboard?id=binsi_petproject-minesweeper)
+Sonarcloud: [Click here](https://sonarcloud.io/dashboard?id=binsi_petproject-minesweeper "Go to Sonarcloud")
 ## Clean Code
 ## Build Management
 ## Continuous Delivery
+Travic CI: [Click here](https://travis-ci.com/binsi/petproject-minesweeper "Go to Travis CI")
 ## AOP
 ## DSL
 ## Functional Programming

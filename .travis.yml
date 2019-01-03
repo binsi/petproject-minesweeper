@@ -1,0 +1,6 @@
+# os: windows
+# language: javascript
+language: node_js
+node_js:
+  - "iojs"
+  - "7"
