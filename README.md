@@ -105,7 +105,7 @@ class BookCollection {
 
 An Idea on how to utilize a DSL code snippet in my pet project would be to translate the player's terminal input e.g. `game.playMove(0, 0)` (to flip the next tile) with a shorter command to the input the code can actually resolve as the long version. This would mean, that the player can type in *0,0* and the input that is understood would be translated into *game.playMove(0, 0)*. <br />
 
-I have outlined the idea with a small code snippet which can be found in [src/dsl-userinput.js]().
+I have outlined the idea with a small code snippet which can be found in [src/dsl-userinput.js](https://github.com/binsi/petproject-minesweeper/blob/master/src/dsl-userinput.js).
 
 ## Functional Programming
 ## Logical Solver
