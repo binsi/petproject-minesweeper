@@ -1,7 +1,7 @@
 export class Board {
   constructor (numberOfRows, numberOfColumns, numberOfBombs){
     this._numberOfBombs = numberOfBombs;
-    this._numberOfTiles = numberOfRows * numberOfColumns;
+    this._numberOfTiles = numberOfRows * numberOfColumns; // here we store the # of tiles which haven't been flipped yet
     this._playerBoard = Board.generatePlayerBoard(numberOfRows, numberOfColumns);
     this._bombBoard = Board.generateBombBoard(numberOfRows, numberOfColumns, numberOfBombs);
   }
@@ -21,9 +21,11 @@ export class Board {
       // write number of neighbouring bombs at position
       this._playerBoard[rowIndex][columnIndex] = this.getNumberOfNeighborBombs(rowIndex, columnIndex);
     }
+    // decrease variable which stores tiles that haven't been flipped
     this._numberOfTiles--;
   }
 
+  // returns integer
   getNumberOfNeighborBombs(rowIndex, columnIndex) {
     const neighborOffsets = [
       [-1, -1],
@@ -52,14 +54,18 @@ export class Board {
     return numberOfBombs
   }
 
+  // returns boolean
   hasSafeTiles() {
+    // check if not equal value or type, false if 5=5
     return this._numberOfTiles !== this._numberOfBombs;
   }
 
+  // logs player board list as visual grid to console
   print() {
     console.log(this._playerBoard.map(row => row.join(' | ')).join('\n'));
   };
 
+ // returns a multi-dimensional array of empty strings
   static generatePlayerBoard(numberOfRows, numberOfColumns){
     const board = [];
     for (let i = 0; i < numberOfRows; i++){
@@ -72,6 +78,7 @@ export class Board {
     return board;
   }
 
+  // returns a multi-dimensional array with null and bombs as strings at random positions on board
   static generateBombBoard(numberOfRows, numberOfColumns, numberOfBombs){
     const board = [];
     for (let i = 0; i < numberOfRows; i++){
@@ -84,7 +91,7 @@ export class Board {
     let numberOfBombsPlaced = 0;
     // fill bomb board with number of bombs provided in construction
     while (numberOfBombsPlaced !== numberOfBombs) {
-      // generate random positions for bomb to be placed at
+      // generate random position for current bomb to be placed at
       const randomRowIndex = Math.floor(Math.random() * numberOfRows);
       const randomColumnIndex = Math.floor(Math.random() * numberOfColumns);
       // place bombs only if field is not yet filled with bomb

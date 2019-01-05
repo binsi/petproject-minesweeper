@@ -1,7 +1,7 @@
-// import module
+// import class Board from module
 import {Board} from './board';
 
-class Game {
+export class Game {
   constructor(numberOfRows, numberOfColumns, numberOfBombs){
     this._board = new Board(numberOfRows, numberOfColumns, numberOfBombs);
   }
