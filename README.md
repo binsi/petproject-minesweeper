@@ -108,5 +108,9 @@ An Idea on how to utilize a DSL code snippet in my pet project would be to trans
 I have outlined the idea with a small code snippet which can be found in [src/dsl-userinput.js](https://github.com/binsi/petproject-minesweeper/blob/master/src/dsl-userinput.js).
 
 ## Functional Programming
-## Logical Solver
+As I have coded the pet project without functional programming in mind, I have created a second branch in which I will reproduce some of the game's code so it is functional. <br />
+
+Click here to check out the branch: []().
+
 ## Code Fragment
+As a first get-to-know with the Clojure programming language I decided to translate a small code fragment from my class board.js into a respective Clojure implementation. It can be found here: [src/fragment.clj](https://github.com/binsi/petproject-minesweeper/blob/master/src/fragment.clj)
