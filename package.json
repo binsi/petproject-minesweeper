@@ -1,0 +1,26 @@
+{
+  "name": "petproject",
+  "version": "1.0.0",
+  "description": "This is a simple console output-only game written in vanilla JavaScript. <br />\r The idea behind the pet project is to get back into coding and apply a list of topics that have been taught during the lecture of the module **Advanced Softwareengineering**. <br />\r The code is an adaption of a project from an intensive program [Build Front-End Web Applications from Scratch](http://pro.codecademy.com/intensive/build-frontend-webapps-from-scratch/ \"Codecademy Program Reference\") found on Codecademy, in which I participated to learn JavaScript earlier in 2018.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binsi/petproject-minesweeper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binsi/petproject-minesweeper/issues"
+  },
+  "homepage": "https://github.com/binsi/petproject-minesweeper#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0"
+  }
+}
