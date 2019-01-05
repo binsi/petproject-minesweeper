@@ -52,8 +52,7 @@ This project follows among others the following concepts:
 7. [Function names should say what they do](https://github.com/binsi/petproject-minesweeper/blob/master/src/board.js#L13)
 8. [Encapsulate conditionals](https://github.com/binsi/petproject-minesweeper/blob/master/src/board.js#L55)
 
-## Build Management
-## Continuous Delivery
+## Build Management & Continuous Delivery
 [![Travis CI](https://travis-ci.com/binsi/petproject-minesweeper.svg?branch=master)](https://travis-ci.com/binsi/petproject-minesweeper) <br />
 
 Travis CI a *continuous integration* platform which supports the development process by automatically building and testing code changes, and providing immediate feedback on the success of the change. <br />
@@ -102,7 +101,11 @@ class BookCollection {
 ```
 
 ## DSL
-"Domain Specific Languages (DSL) are super useful. They are languages that are focused on solving one specific problem really well, abstracting away details that get in the way of productivity or innovation."(https://medium.com/outsystems-engineering/domain-specific-language-prototyping-and-design-made-easy-9cec69d2d0fc)
+"Domain Specific Languages (DSL) are super useful. They are languages that are focused on solving one specific problem really well, abstracting away details that get in the way of productivity or innovation."(https://medium.com/outsystems-engineering/domain-specific-language-prototyping-and-design-made-easy-9cec69d2d0fc) <br />
+
+An Idea on how to utilize a DSL code snippet in my pet project would be to translate the player's terminal input e.g. `game.playMove(0, 0)` (to flip the next tile) with a shorter command to the input the code can actually resolve as the long version. This would mean, that the player can type in *0,0* and the input that is understood would be translated into *game.playMove(0, 0)*. <br />
+
+I have outlined the idea with a small code snippet which can be found in [src/dsl-userinput.js]().
 
 ## Functional Programming
 ## Logical Solver
