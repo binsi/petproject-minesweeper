@@ -110,11 +110,13 @@ An Idea on how to utilize a DSL code snippet in my pet project would be to trans
 I have outlined the idea with a small code snippet which can be found in [src/dsl-userinput.js](https://github.com/binsi/petproject-minesweeper/blob/master/src/dsl-userinput.js).
 
 ## Functional Programming
-As I have coded the pet project without functional programming in mind, I have created a second branch in which I will reproduce some of the game's code so it is functional. <br />
+As I have coded the pet project without functional programming in mind, I have created a second project in which I will show some functional code in JavaScript. <br />
 
-For JavaScript code it is easy to turn it from classes to functional programming because by utilizing Redux Reduce, we can handle the state changes and make them fulfill the function programming paradigm "Immutability of variables" and "Pure functions". The latter fulfills two properties: First, pure functions will always produce the same output for same arguments irrespective of anything else. And secondly, they have no side-effects i.e. they do not modify any argument or global variables. [Source](https://www.geeksforgeeks.org/functional-programming-paradigm/). <br />
+For JavaScript code it is possible to turn it from classes to functional programming by utilizing Redux Reduce. We can handle the state changes and make them fulfill the function programming paradigm "Immutability of variables" and "Pure functions". The latter fulfills two properties: First, pure functions will always produce the same output for same arguments irrespective of anything else. And secondly, they have no side-effects i.e. they do not modify any argument or global variables. [Source](https://www.geeksforgeeks.org/functional-programming-paradigm/). <br />
 
-Click here to check out the branch: [Functional Programming Code with Redux Reduce]().
+Because changing the existing code to functional code would require to refactor the code a lot, I decided to provide another small game code. This game is unrelated to the minesweeper implementation. It is an implementation of *Rock, Paper, Scissors* in JavaScript. <br />
+
+Click here to check out the code: [Functional Programming Code](https://github.com/binsi/RockPaperScissors/blob/master/rockpaperscissors.js).
 
 ## Code Fragment
 As a first get-to-know with the Clojure programming language I decided to translate a small code fragment from my class board.js into a respective Clojure implementation. It can be found here: [src/fragment.clj](https://github.com/binsi/petproject-minesweeper/blob/master/src/fragment.clj)
