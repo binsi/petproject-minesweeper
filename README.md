@@ -114,7 +114,7 @@ As I have coded the pet project without functional programming in mind, I have c
 
 For JavaScript code it is possible to turn it from classes to functional programming by utilizing Redux Reduce. We can handle the state changes and make them fulfill the function programming paradigm "Immutability of variables" and "Pure functions". The latter fulfills two properties: First, pure functions will always produce the same output for same arguments irrespective of anything else. And secondly, they have no side-effects i.e. they do not modify any argument or global variables. [Source](https://www.geeksforgeeks.org/functional-programming-paradigm/). <br />
 
-Because changing the existing code to functional code would require to refactor the code a lot, I decided to provide another small game code. This game is unrelated to the minesweeper implementation. It is an implementation of *Rock, Paper, Scissors* in JavaScript. <br />
+Because changing the existing code to functional code would require to refactor the code a lot, I decided to provide another small game code. This game is unrelated to the minesweeper game. It is an implementation of *Rock, Paper, Scissors* in JavaScript. <br />
 
 Click here to check out the code: [Functional Programming Code](https://github.com/binsi/RockPaperScissors/blob/master/rockpaperscissors.js).
 
