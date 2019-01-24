@@ -37,6 +37,8 @@ The following diagrams are following the UML notation. For this pet project, I p
 
 In order to analyze many metrics at once, I utilize the [SonarQube Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner). This is an automatic code review tool to detect bugs, vulnerabilities and code smells in the code. It can integrate with any existing workflow to enable continuous code inspection across all project branches and pull requests. <br />
 
+Currently the code review tool is set to "fail" which is due to the low code coverage as no tests have been written yet. However, all other metrics are in "green stages" which means that all other performance indicators for the code are appropriate for this small project. <br />
+
 Sonarcloud: [Click here to go to project dashboard](https://sonarcloud.io/dashboard?id=binsi_petproject-minesweeper "Go to Sonarcloud")
 
 ## Clean Code
@@ -110,7 +112,9 @@ I have outlined the idea with a small code snippet which can be found in [src/ds
 ## Functional Programming
 As I have coded the pet project without functional programming in mind, I have created a second branch in which I will reproduce some of the game's code so it is functional. <br />
 
-Click here to check out the branch: []().
+For JavaScript code it is easy to turn it from classes to functional programming because by utilizing Redux Reduce, we can handle the state changes and make them fulfill the function programming paradigm "Immutability of variables" and "Pure functions". The latter fulfills two properties: First, pure functions will always produce the same output for same arguments irrespective of anything else. And secondly, they have no side-effects i.e. they do not modify any argument or global variables. [Source](https://www.geeksforgeeks.org/functional-programming-paradigm/). <br />
+
+Click here to check out the branch: [Functional Programming Code with Redux Reduce]().
 
 ## Code Fragment
 As a first get-to-know with the Clojure programming language I decided to translate a small code fragment from my class board.js into a respective Clojure implementation. It can be found here: [src/fragment.clj](https://github.com/binsi/petproject-minesweeper/blob/master/src/fragment.clj)
