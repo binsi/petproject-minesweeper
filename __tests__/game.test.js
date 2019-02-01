@@ -1,6 +1,6 @@
-import {Board} from './board.js';
-import {Game} from './game.js';
-jest.mock('./board.js');
+import {Board} from '../src/board.js';
+import {Game} from '../src/game.js';
+jest.mock('../src/board.js');
 
 beforeEach(() => {
   // Clear all instances and calls to constructor and all methods:
