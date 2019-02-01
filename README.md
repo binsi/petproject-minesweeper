@@ -37,7 +37,7 @@ The following diagrams are following the UML notation. For this pet project, I p
 
 In order to analyze many metrics at once, I utilize the [SonarQube Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner). This is an automatic code review tool to detect bugs, vulnerabilities and code smells in the code. It can integrate with any existing workflow to enable continuous code inspection across all project branches and pull requests. <br />
 
-Currently the code review tool is set to "fail" which is due to the low code coverage as no tests have been written yet. However, all other metrics are in "green stages" which means that all other performance indicators for the code are appropriate for this small project. <br />
+The Sonar scanner detects that this project is a very small one with 118 lines of code. Hence, some quality gate conditions are ignored because of the project's size. Currently the tool detects low code coverage as only a small simple test file for game.js has been written. However, all other metrics are in "green stages" which means that all other performance indicators for the code are appropriate for this small project. <br />
 
 Sonarcloud: [Click here to go to project dashboard](https://sonarcloud.io/dashboard?id=binsi_petproject-minesweeper "Go to Sonarcloud")
 
@@ -107,7 +107,7 @@ class BookCollection {
 
 An Idea on how to utilize a DSL code snippet in my pet project would be to translate the player's terminal input e.g. `game.playMove(0, 0)` (to flip the next tile) with a shorter command to the input the code can actually resolve as the long version. This would mean, that the player can type in *0,0* and the input that is understood would be translated into *game.playMove(0, 0)*. <br />
 
-I have outlined the idea with a small code snippet which can be found in [src/dsl-userinput.js](https://github.com/binsi/petproject-minesweeper/blob/master/src/dsl-userinput.js).
+I have outlined the idea with a small code snippet which can be found in [src/dsl-userinput.js](https://github.com/binsi/petproject-minesweeper/blob/master/code-fragments/dsl-userinput.js).
 
 ## Functional Programming
 As I have coded the pet project without functional programming in mind, I have created a second project in which I will show some functional code in JavaScript. <br />
@@ -119,4 +119,4 @@ Because changing the existing code to functional code would require to refactor 
 Click here to check out the code: [Functional Programming Code](https://github.com/binsi/RockPaperScissors/blob/master/rockpaperscissors.js).
 
 ## Code Fragment
-As a first get-to-know with the Clojure programming language I decided to translate a small code fragment from my class board.js into a respective Clojure implementation. It can be found here: [src/fragment.clj](https://github.com/binsi/petproject-minesweeper/blob/master/src/fragment.clj)
+As a first get-to-know with the Clojure programming language I decided to translate a small code fragment from my class board.js into a respective Clojure implementation. It can be found here: [src/fragment.clj](https://github.com/binsi/petproject-minesweeper/blob/master/code-fragments/fragment.clj)

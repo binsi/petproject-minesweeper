@@ -1,7 +1,7 @@
 organization=binsi-github
 projectKey=binsi_petproject-minesweeper
 serverUrl=https://sonarcloud.io
-serverVersion=7.6.0.21360
+serverVersion=7.7.0.21605
 dashboardUrl=https://sonarcloud.io/dashboard?id=binsi_petproject-minesweeper
-ceTaskId=AWiAQBlcD2RnRo7Tn9CY
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWiAQBlcD2RnRo7Tn9CY
+ceTaskId=AWipMiBgSr1wYhq3ia84
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWipMiBgSr1wYhq3ia84
